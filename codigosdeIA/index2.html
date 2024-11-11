@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .boton-enlace {
+            background-color: #4CAF50; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 15px 32px; /* Espaciado interno */
+            text-align: center; /* Alineación del texto */
+            text-decoration: none; /* Sin subrayado */
+            display: inline-block; /* Mostrar como bloque en línea */
+            font-size: 16px; /* Tamaño de la fuente */
+            margin: 4px 2px; /* Margen externo */
+            cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+            border-radius: 12px; /* Bordes redondeados */
+            transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+        }
+
+        .boton-enlace:hover {
+            background-color: #45a049; /* Color de fondo al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <a href="textos.html" class="boton-enlace">dar click 👆</a>
+
+    <h1>Buscar en la Página</h1>
+     <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Buscar...">
+      <ul id="myUL"></ul>
+</body>
+</html>

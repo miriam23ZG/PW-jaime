@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+      body{
+          background-color: rgb(179, 148, 209);
+      }
+      li {
+    font-size: 20px;
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html">🏠</a>
+  <a href="estilos.html">➡</a>
+
+    <h1>Formularios</h1>
+    <h2>Formulario con GET</h2>
+    <form action="formularios.html" method="GET">
+        
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre(s)"
+        required
+      />
+      <input
+        type="text"
+        name="apellido_paterno"
+        id="apellido_paterno"
+        placeholder="Apellido paterno"
+        required
+      />
+      <input
+        type="text"
+        name="apellido_materno"
+        id="apellido_materno"
+        placeholder="Apellido materno"
+        required
+      />
+      <div>
+        <label for="colores">Colores</label>
+        <select name="colores">
+             <optgroup label="Colores primarios">
+             <option value="rojo">Rojo</option>
+             <option value="verde">Verde</option>
+             <option value="azul">Azul</option>
+             </optgroup>
+             <optgroup label="Colores secundarios">
+             <option
+            value="amarillo">Amarillo</option>
+             <option value="naranja">Naranja</option>
+             <option value="violeta">Violeta</option>
+             </optgroup>
+             </select>
+             <br>
+             <meter value="0.5" min="0" max="1">50%</meter>
+             <progress value="75" max="100">75%</progress>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+    
+            <button type="reset">Limpiar</button>
+    
+            <button type="button">Cancelar</button>
+            </div>
+    </form>
+    <h2>Formulario con POST</h2>
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      placeholder="Nombre(s)"
+      required
+    />
+    <input
+      type="text"
+      name="apellido_paterno"
+      id="apellido_paterno"
+      placeholder="Apellido paterno"
+      required
+    />
+    <input
+      type="text"
+      name="apellido_materno"
+      id="apellido_materno"
+      placeholder="Apellido materno"
+      required
+    />
+    <form method="post" action="/prosesa">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"/>
+        </p>
+        <div>
+            <label for="masculino">
+                <input type="radio" id="masculino" name="genero" value="M" checked />
+                Masculino
+            </label>
+        </div>
+        <div>
+            <label for="femenino">
+                <input type="radio" id="femenino" name="genero" value="f" checked />
+                Femenino
+            </label>
+        </div>
+        
+    </form>
+        
+    <br >
+    <select name="pais">
+        <option value="MX" selected>México</option>
+        <option value="US">Estados Unidos</option>
+        <option value="CA">Canadá</option>
+        </select>
+    <button type="submit">
+        <img src="assets/maddona.jpg" alt="Icono" width="25" height="25"/>
+        Guardar
+        </button>
+        <fieldset>
+             <legend>Datos personales</legend>
+             <label for="nombre">Nombre:</label>
+             <input type="text" id="nombre" name="nombre"/>
+             <label for="apellido">Apellido:</label>
+             <input type="text" id="apellido"
+            name="apellido" />
+        </fieldset>
+
+        <fieldset disabled>
+             <legend>Datos personales</legend>
+             <label for="nombre">Nombre:</label>
+             <input type="text" id="nombre" name="nombre" />
+             <label for="apellido">Apellido:</label>
+             <input type="text" id="apellido" name="apellido" />
+             </fieldset>
+       <br>
+         <input list="colores" name="color" />
+            <datalist id="colores">
+            <option value="Rojo" />
+            <option value="Verde" />
+            <option value="Azul" />
+            </datalist>
+            
+            <output name="resultado"
+             for="numero">0</output>
+            
+            <progress value="75" max="100">75%</progress>
+            
+            <meter value="0.5" min="0" max="1">50%
+            </meter>
+            
+            <details>
+            <summary>Detalles</summary>
+            <p>Contenido de los detalles...</p>
+            </details>
+</body>
+</html>
