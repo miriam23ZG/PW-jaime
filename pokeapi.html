@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeapi</title>
+    <script src="pokeapi.js" defer></script>
+    <link rel="icon" href="Activos/logo.png">">
+    <link rel="stylesheet" href="pokeapi.css">
+</head>
+<body>
+    <a class="principal" href="index.html">Principal</a><br/>
+    <a class="anterior" href="objetos2.html">Anterior</a><br/>
+    <a class="siguiente" href="TheOpenMovieDatabaseapi.html">Siguiente</a><br/>
+
+    <main class="contenedor">
+
+        <div class="panel-izquierdo">
+            <form id="formulario-busqueda">
+                <label for="input-nombre-pokemon">Busca un Pokémon:</label>
+                <input type="text" id="input-nombre-pokemon" placeholder="Ejemplo: pikachu" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div class="pantalla">
+                img src
+                <img id="assets/picachu.jpg" src="assets/picachu.jpg" alt="Imagen del Pokémon">
+            </div>
+        </div>
+        
+        <div class="panel-derecho">
+            <div class="pantalla-informacion">
+                <dl>
+                    <dt>Nombre:</dt>
+                    <dd id="nombre-pokemon">-</dd>
+                    <dd id="mensaje-error" style="display:none; color: red;"></dd>
+                    <dt>Id:</dt>
+                    <dd id="id-pokemon">-</dd>
+                    <dt>Tipos:</dt>
+                    <dd id="tipos-pokemon">-</dd>
+                    <dt>Altura:</dt>
+                    <dd id="altura-pokemon">-</dd>
+                    <dt>Peso:</dt>
+                    <dd id="peso-pokemon">-</dd>
+                    <dt>Habilidades:</dt>
+                    <dd id="habilidades-pokemon">-</dd>
+                    <dt>Estadísticas Base:</dt>
+                    <dd id="estadisticas-pokemon">-</dd>
+                    <dt>Sonido:</dt>
+                    <dd>
+                        <audio id="sonido-pokemon"></audio>
+                    </dd>
+                </dl>                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
