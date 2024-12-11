@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Google</title>
     <style>
-        .boton-enlace {
-            background-color: #4CAF50; /* Color de fondo */
-            color: white; /* Color del texto */
-            padding: 15px 32px; /* Espaciado interno */
-            text-align: center; /* Alineación del texto */
-            text-decoration: none; /* Sin subrayado */
-            display: inline-block; /* Mostrar como bloque en línea */
-            font-size: 16px; /* Tamaño de la fuente */
-            margin: 4px 2px; /* Margen externo */
-            cursor: pointer; /* Cursor de mano al pasar sobre el botón */
-            border-radius: 12px; /* Bordes redondeados */
-            transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de color */
+        /* Estilos opcionales para el mapa */
+        .map-container {
+            text-align: center;
+            margin: 20px;
         }
 
-        .boton-enlace:hover {
-            background-color: #45a049; /* Color de fondo al pasar el cursor */
+        .map-container iframe {
+            border: 0; /* Sin borde */
+            width: 80%; /* Ancho del mapa */
+            height: 450px; /* Altura del mapa */
         }
     </style>
 </head>
 <body>
-    <a href="textos.html" class="boton-enlace">dar click 👆</a>
-
-    <h1>Buscar en la Página</h1>
-     <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Buscar...">
-      <ul id="myUL"></ul>
+    <h1>Mi Ubicación en Google Maps</h1>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091176!2d144.9630576153157!3d-37.8162797797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f9d31f%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1610959137959!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
 </body>
 </html>

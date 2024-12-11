@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <link rel="icon" href="assets/logo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
-    <link rel="stylesheet" href="css/dom.css">
-    <style>
-        body{
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #8cd0f7; 
-        }
-    </style>
-</head> 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Demo de JavaScript</title>
+</head>
+
 <body>
-    <a href="index.html">Principal</a><br/>
-    <a href="js_demo.html">Anterior</a><br/>
-    <a href="index.html">inicio</a><br/>
-    <h1 id="titulo">Titulo</h1>
-    <p class="parrafo">este parrafo tiene un gato</p>
-    <p class="parrafo">Parrafo 2</p>
-    <p class="parrafo">Parrafo 3</p>
-    <script src="js/dom.js"></script>
+   <h1 onmouseenter="style.color = 'white'" onmouseleave="style.color = 'black'">Título cualquiera</h1>
+   <nav>
+      <ul type="none">
+        <li><code> <img src="assets/external.svg" alt="Icono de enlace externo" width="12" height="12"> </code><a href="ks2.html">Volver a ejercicio de Kitchen Sink ⬅️</a></li>
+        <li><code> <img src="assets/external.svg" alt="Icono de enlace externo" width="12" height="12"> </code><a href="index.html">Ir a inicio 🏠</a></li>
+        <li><code> <img src="assets/external.svg" alt="Icono de enlace externo" width="12" height="12"> </code><a href="dom.html">Seguir a demo de DOM en JS ➡️</a></li>
+      </ul>
+   </nav>
+   <hr>
+   <p>Este es un párrafo de ejemplo para la clase del profe Jaime y quiero extender el texto lo más largo posible paraque se vea bien en la pantalla.</p>
+
+   <script>
+      console.log("Hola mundo");
+   </script>
+   <script src="js/script.js"></script>
 </body>
+
 </html>
