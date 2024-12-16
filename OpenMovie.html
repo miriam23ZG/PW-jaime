@@ -44,4 +44,52 @@
   </main>
   <script src="js/TheOpenMovieDatabaseapi.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMDb API Viewer</title>
+  <link rel="stylesheet" href="openmovie.css">
+</head>
+<body>
+    <a class="principal" href="index.html">Principal</a><br/>
+    <a class="anterior" href="pokeapi.html">Anterior</a><br/>
+  <header>
+    <h1>OMDb API</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Busca peliculas o series..." required>
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+  <main>
+    <section id="results">
+      <h2>Resultado</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Poster</th>
+            <th>Titulo</th>
+            <th>Año</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody id="results-table">
+        
+        </tbody>
+      </table>
+    </section>
+    <section id="details" style="display: none;">
+      <div id="modal">
+        <button id="close-modal">Cerrar</button>
+        <div id="details-content">
+        
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/TheOpenMovieDatabaseapi.js"></script>
+</body>
+>>>>>>> 441045c38c88726e5ad3c1d4d12471c08ee79a16
 </html>
